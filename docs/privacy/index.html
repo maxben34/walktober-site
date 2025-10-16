@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Walktober</title>
+  <meta name="description" content="Privacy Policy for Walktober" />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6; margin: 0; padding: 0; }
+    header { padding: 2rem 1rem; text-align: center; }
+    main { max-width: 760px; margin: 0 auto; padding: 0 1rem 4rem; }
+    a { color: inherit; }
+    h1, h2, h3 { line-height: 1.25; }
+    nav a { display: inline-block; margin: 0 .75rem; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/tos/">Terms of Service</a>
+    </nav>
+  </header>
+  <main>
+    <p>Effective date: <strong><span id="effective-date"></span></strong></p>
+    <p>Ben Kaplan ("we", "us", or "our") operates Walktober (the "Service"). This Privacy Policy describes how we collect, use, and share information when you use the Service.</p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>Account and profile information</strong>: such as name and email you provide.</li>
+      <li><strong>Usage data</strong>: interactions with the Service, device and browser information.</li>
+      <li><strong>Cookies and similar technologies</strong>: used to remember preferences and analyze usage.</li>
+    </ul>
+
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>Provide, operate, and improve the Service.</li>
+      <li>Communicate with you, including updates and support.</li>
+      <li>Personalize content and measure performance.</li>
+      <li>Maintain safety, security, and integrity of the Service.</li>
+      <li>Comply with legal obligations.</li>
+    </ul>
+
+    <h2>Sharing of Information</h2>
+    <p>We do not sell your personal information. We may share information with service providers who help us operate the Service, with your consent, to comply with the law, or to protect our rights.</p>
+
+    <h2>Data Retention</h2>
+    <p>We retain information for as long as necessary to provide the Service and for legitimate business or legal purposes.</p>
+
+    <h2>Your Choices</h2>
+    <ul>
+      <li>You may access, update, or delete certain information in your account settings.</li>
+      <li>You may control cookies through your browser settings.</li>
+      <li>You may opt out of non-essential communications from us.</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The Service is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>International Transfers</h2>
+    <p>Your information may be transferred to and processed in countries other than your own. We take steps to ensure appropriate safeguards are in place.</p>
+
+    <h2>Security</h2>
+    <p>We use reasonable organizational and technical measures to protect information. However, no method of transmission or storage is completely secure.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will post the updated Policy on this page with a new effective date.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions, contact: <a href="mailto:legal@walktober.app">legal@walktober.app</a></p>
+  </main>
+  <script>
+    const d = new Date();
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    document.getElementById('effective-date').textContent = `${yyyy}-${mm}-${dd}`;
+  </script>
+</body>
+</html>
