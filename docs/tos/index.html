@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service | Walktober</title>
+  <meta name="description" content="Terms of Service for Walktober" />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6; margin: 0; padding: 0; }
+    header { padding: 2rem 1rem; text-align: center; }
+    main { max-width: 760px; margin: 0 auto; padding: 0 1rem 4rem; }
+    a { color: inherit; }
+    h1, h2, h3 { line-height: 1.25; }
+    nav a { display: inline-block; margin: 0 .75rem; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Terms of Service</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/privacy/">Privacy Policy</a>
+    </nav>
+  </header>
+  <main>
+    <p>Effective date: <strong><span id="effective-date"></span></strong></p>
+
+    <p>These Terms of Service ("Terms") govern your access to and use of Walktober (the "Service") provided by Ben Kaplan ("we", "us", or "our"). By accessing or using the Service, you agree to be bound by these Terms.</p>
+
+    <h2>1. Use of the Service</h2>
+    <ul>
+      <li>You must be at least 13 years old to use the Service.</li>
+      <li>You agree to use the Service in compliance with applicable laws and these Terms.</li>
+      <li>We may change or discontinue features at any time.</li>
+    </ul>
+
+    <h2>2. Accounts and Security</h2>
+    <ul>
+      <li>You are responsible for safeguarding your account credentials.</li>
+      <li>You are responsible for activities that occur under your account.</li>
+      <li>Notify us immediately of any unauthorized use.</li>
+    </ul>
+
+    <h2>3. Content</h2>
+    <ul>
+      <li>You retain ownership of your content.</li>
+      <li>By submitting content, you grant us a non-exclusive license to operate and improve the Service.</li>
+      <li>You represent you have the rights to the content you submit.</li>
+    </ul>
+
+    <h2>4. Acceptable Use</h2>
+    <ul>
+      <li>No unlawful, harmful, or abusive activities.</li>
+      <li>No attempts to disrupt or compromise the Service.</li>
+      <li>No infringement of intellectual property or privacy rights.</li>
+    </ul>
+
+    <h2>5. Third-Party Services</h2>
+    <p>The Service may integrate with third-party services. We are not responsible for third-party content or practices.</p>
+
+    <h2>6. Disclaimers</h2>
+    <p>The Service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind.</p>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues.</p>
+
+    <h2>8. Termination</h2>
+    <p>We may suspend or terminate your access to the Service at any time for any reason.</p>
+
+    <h2>9. Governing Law</h2>
+    <p>These Terms are governed by the laws of the jurisdiction where Ben Kaplan resides, without regard to conflict of law principles.</p>
+
+    <h2>10. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. We will post the updated Terms on this page with a new effective date.</p>
+
+    <h2>11. Contact</h2>
+    <p>Questions about these Terms? Contact: <a href="mailto:legal@walktober.app">legal@walktober.app</a></p>
+  </main>
+  <script>
+    const d = new Date();
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    document.getElementById('effective-date').textContent = `${yyyy}-${mm}-${dd}`;
+  </script>
+</body>
+</html>
