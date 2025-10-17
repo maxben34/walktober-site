@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Walktober Platformer — Halloween Run</title>
+  <meta name="description" content="A simple Halloween-themed platformer: run as a pumpkin head, dodge skeletons and bats." />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" href="/assets/walktober-icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/platformer/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <img class="brand-icon" src="/assets/walktober-icon.png" onerror="this.onerror=null;this.src='/assets/walktober-icon.svg'" alt="Walktober" />
+      <span>Walktober</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/platformer/" class="active">Platformer</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/tos/">Terms</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="panel-header">
+        <h1>Halloween Run</h1>
+        <p class="sub">Play as a pumpkin head. Jump over skeletons and dodge bats. Survive to score!</p>
+        <div class="controls">
+          <span>Controls:</span>
+          <code>←</code>
+          <code>→</code>
+          <code>↑ or Space</code>
+        </div>
+      </div>
+      <div class="game-wrap">
+        <canvas id="game" width="900" height="520" aria-label="Halloween Platformer"></canvas>
+        <div id="overlay" class="overlay hidden" role="dialog" aria-live="assertive">
+          <div class="overlay-box">
+            <h2 id="stateTitle">Halloween Run</h2>
+            <p id="stateSubtitle">Press Space to Start</p>
+            <button id="startBtn" class="btn">Start</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <div class="legend">
+          <span class="chip pumpkin">You</span>
+          <span class="chip skeleton">Skeleton</span>
+          <span class="chip bat">Bat</span>
+          <span class="chip candy">Candy</span>
+        </div>
+        <div class="cta">
+          <a class="btn ghost" href="/">Back to Walktober</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Walktober — Happy Halloween 🎃</p>
+  </footer>
+
+  <script src="/platformer/game.js" type="module"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
